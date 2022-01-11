@@ -1,5 +1,4 @@
-{
-    "products": [
+[
       {
         "id": 1,
         "name": "Loan Product General",
@@ -101,4 +100,3 @@
         "rate": "7,25%"
       }
     ]
-}
