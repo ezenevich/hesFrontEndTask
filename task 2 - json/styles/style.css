@@ -34,6 +34,11 @@
     border-right: 1px solid #E0E0E0;
 }
 
+.products-box__scroll{
+    height: 600px;
+    overflow-y: auto;
+}
+
 .create-product{
     display: flex;
     justify-content: space-around;
