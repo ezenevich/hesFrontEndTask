@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SuperBank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/gridLayout.css" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <span class="header__logo">Super<strong>Bank</strong></span>
+    </header>
+    <div class="content-box">
+        <div class="products-box">
+            <div class="create-product">
+                <button class="create-product__btn">Создать продукт</button>
+            </div>
+            <div class="products-list">
+                <div class="products-list-item products-list-item_active">
+                    <h3 class="products-list-item__name">Loan Product General</h3>
+                    <p class="products-list-item__date">12.12.2021</p>
+                </div>
+                <div class="products-list-item">
+                    <h3 class="products-list-item__name">Loan Product 3000</h3>
+                    <p class="products-list-item__date">12.11.2021</p>
+                </div>
+                <div class="products-list-item">
+                    <h3 class="products-list-item__name">Loan Product 1000</h3>
+                    <p class="products-list-item__date">10.12.2021</p>
+                </div>
+                <div class="products-list-item">
+                    <h3 class="products-list-item__name">Loan Product для своих</h3>
+                    <p class="products-list-item__date">15.12.2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <h1 class="product-description__header">Редактирование: Loan Product General</h1>
+            <div class="product-description__hr"></div>
+            <div class="product-description__input product-description__input_name">
+                <label for="name" class="product-description__input_label">Product Name</label>
+                <input id="name" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <div class="product-description__input product-description__input_min-amount">
+                <label for="min-amount" class="product-description__input_label">Min Amount</label>
+                <input id="min-amount" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <div class="product-description__input product-description__input_max-amount">
+                <label for="max-amount" class="product-description__input_label">Max Amount</label>
+                <input id="max-amount" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <div class="product-description__input product-description__input_min-term">
+                <label for="min-term" class="product-description__input_label">Min Term</label>
+                <input id="min-term" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <div class="product-description__input product-description__input_max-term">
+                <label for="max-term" class="product-description__input_label">Max Term</label>
+                <input id="max-term" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <div class="product-description__input product-description__input_rate">
+                <label for="rate" class="product-description__input_label">Annual Interest Rate</label>
+                <input id="rate" class="product-description__input_field" placeholder="Placeholder">
+            </div>
+            <button class="product-description__btn">Сохранить</button>
+
+        </div>
+    </div>
+</body>
+</html>
