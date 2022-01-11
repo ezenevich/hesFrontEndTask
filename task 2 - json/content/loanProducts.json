@@ -5,8 +5,8 @@
         "date": "12.12.2021",
         "min_amount": "1000$",
         "max_amount": "20000$",
-        "min_term": "12 month",
-        "max_term": "96 month",
+        "min_term": "12 months",
+        "max_term": "96 months",
         "rate": "10,25%"
       },
       {
@@ -15,8 +15,8 @@
         "date": "11.12.2021",
         "min_amount": "1000$",
         "max_amount": "3000$",
-        "min_term": "12 month",
-        "max_term": "24 month",
+        "min_term": "12 months",
+        "max_term": "24 months",
         "rate": "8,75%"
       },
       {
@@ -25,8 +25,8 @@
         "date": "10.12.2021",
         "min_amount": "100$",
         "max_amount": "1000$",
-        "min_term": "3 month",
-        "max_term": "12 month",
+        "min_term": "3 months",
+        "max_term": "12 months",
         "rate": "7,75%"
       },
       {
@@ -35,8 +35,8 @@
         "date": "15.12.2021",
         "min_amount": "1000 BYN",
         "max_amount": "100000 BYN",
-        "min_term": "24 month",
-        "max_term": "96 month",
+        "min_term": "24 months",
+        "max_term": "96 months",
         "rate": "9,75%"
       },
       {
@@ -45,8 +45,8 @@
         "date": "17.12.2021",
         "min_amount": "10000 BYN",
         "max_amount": "100000 BYN",
-        "min_term": "24 month",
-        "max_term": "84 month",
+        "min_term": "24 months",
+        "max_term": "84 months",
         "rate": "9,25%"
       },
       {
@@ -55,8 +55,8 @@
         "date": "21.12.2021",
         "min_amount": "50000 BYN",
         "max_amount": "200000 BYN",
-        "min_term": "36 month",
-        "max_term": "120 month",
+        "min_term": "36 months",
+        "max_term": "120 months",
         "rate": "8,85%"
       },
       {
@@ -65,8 +65,8 @@
         "date": "18.12.2021",
         "min_amount": "500$",
         "max_amount": "2000$",
-        "min_term": "6 month",
-        "max_term": "18 month",
+        "min_term": "6 months",
+        "max_term": "18 months",
         "rate": "9,25%"
       },
       {
@@ -75,8 +75,8 @@
         "date": "17.12.2021",
         "min_amount": "5000$",
         "max_amount": "200000$",
-        "min_term": "36 month",
-        "max_term": "156 month",
+        "min_term": "36 months",
+        "max_term": "156 months",
         "rate": "8,75%"
       },
       {
@@ -85,8 +85,8 @@
         "date": "16.12.2021",
         "min_amount": "3000$",
         "max_amount": "15000$",
-        "min_term": "24 month",
-        "max_term": "120 month",
+        "min_term": "24 months",
+        "max_term": "120 months",
         "rate": "8,25%"
       },
       {
@@ -95,8 +95,8 @@
         "date": "25.12.2021",
         "min_amount": "10000$",
         "max_amount": "300000$",
-        "min_term": "60 month",
-        "max_term": "180 month",
+        "min_term": "60 months",
+        "max_term": "180 months",
         "rate": "7,25%"
       }
-    ]
+]

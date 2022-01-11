@@ -22,11 +22,14 @@ readJsonFile("./content/loanProducts.json", function(text){
         let productsListItemNDate = document.createElement('p');
 
         productsListItem.className = "products-list-item";
+        productsListItem.setAttribute("onclick", 'useProduct(this)');
+
         productsListItemName.className = "products-list-item__name";
         productsListItemNDate.className = "products-list-item__date";
 
         productsListItemName.innerText = prod.name;
         productsListItemName.setAttribute("id", prod.id);
+        productsListItemName.setAttribute("name", prod.name);
         productsListItemName.setAttribute("min-amount", prod.min_amount);
         productsListItemName.setAttribute("max-amount", prod.max_amount);
         productsListItemName.setAttribute("min-term", prod.min_term);
