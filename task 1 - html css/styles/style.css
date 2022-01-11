@@ -29,9 +29,13 @@
     height: calc(100% - 60px);
 }
 
-.products-box{
+.products-box {
     width: 300px;
     border-right: 1px solid #E0E0E0;
+}
+.products-box__scroll{
+    height: 600px;
+    overflow-y: auto;
 }
 
 .create-product{
