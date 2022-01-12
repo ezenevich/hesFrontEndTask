@@ -2,13 +2,15 @@
     margin: 0;
     font-family: Roboto, sans-serif;
     font-style: normal;
+    background-color: #232222;
 }
 
 .header{
     position: fixed;
     width: 100%;
     height: 60px;
-    background-color: #0F0F0F;
+    background-color: #232222;
+    border-bottom: 1px solid #5b5b5b;
 }
 
 .header__logo{
@@ -31,7 +33,7 @@
 
 .products-box{
     width: 300px;
-    border-right: 1px solid #E0E0E0;
+    border-right: 1px solid #5b5b5b;
 }
 
 .products-box__scroll{
@@ -44,13 +46,13 @@
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgb(150, 150, 150);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgb(150, 150, 150);
 }
 
 .create-product{
@@ -63,7 +65,7 @@
     width: 255px;
     height: 35px;
     margin: auto;
-    background-color: #0F0F0F;
+    background-color: #E0E0E0;
     border-radius: 4px;
     border: none;
 
@@ -73,7 +75,7 @@
     font-size: 11px;
     line-height: 13px;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .product-list{
@@ -82,11 +84,11 @@
 
 .products-list-item{
     height: 70px;
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #5b5b5b;
 }
 
 .products-list-item_active{
-    background-color: #F7F7F7;
+    background-color: #5b5b5b;
     border-right: 3px solid #2588E3;
 }
 
@@ -96,7 +98,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #000000;
+    color: #E0E0E0;
     pointer-events: none;
 }
 
@@ -114,11 +116,11 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
-    color: #000000;
+    color: #E0E0E0;
 }
 
 .product-description__hr{
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #5b5b5b;
 }
 
 .product-description__input {
@@ -130,14 +132,14 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #000000;
+    color: #E0E0E0;
 }
 .product-description__input_field {
     height: 36px;
     padding: 10px;
 
-    background-color: #FFFFFF;
-    border: 1px solid #EFEFEF;
+    background-color: #E0E0E0;
+    border: 1px solid #5b5b5b;
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -146,7 +148,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #666666;
+    color: #000000;
 }
 
 .product-description__input_field:focus-visible{
