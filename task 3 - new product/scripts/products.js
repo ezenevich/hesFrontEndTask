@@ -17,7 +17,6 @@ const loadProduct = (item) => {
     item.className += " products-list-item_active";
 
     let itemData = item.children.item(0);
-    console.log(itemData);
     for(let i = 2; i < itemData.attributes.length; i++){
         getElemById(itemData.attributes.item(i).name).value = itemData.attributes.item(i).nodeValue;
     }
@@ -28,7 +27,23 @@ const loadProduct = (item) => {
 }
 
 
+const inputsNotEmpty = () => {
+    let inputs = getElemByClass('product-description__input_field');
+    for(let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value === ''){
+            alert("Все поля должны быть заполнены!");
+            inputs[i].focus();
+            return false;
+        }
+    }
+    return true;
+}
+
+
 const saveProduct = () => {
+    if(!inputsNotEmpty()){
+        return 0;
+    }
     if(getElemByClass("product-description__header").item(0).textContent === "Редактирование: ") {
         addNewProduct();
         return 0;

@@ -24,7 +24,24 @@ const loadProduct = (item) => {
 
 }
 
+
+const inputsNotEmpty = () => {
+    let inputs = getElemByClass('product-description__input_field');
+    for(let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value === ''){
+            alert("Все поля должны быть заполнены!");
+            inputs[i].focus();
+            return false;
+        }
+    }
+    return true;
+}
+
 const saveProduct = () => {
+    if(!inputsNotEmpty()){
+        return 0;
+    }
+
     let newProductData = getElemByClass('product-description__input_field');
     let oldProductData = getElemByClass('products-list-item_active').item(0).children.item(0);
 
