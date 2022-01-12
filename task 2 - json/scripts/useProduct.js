@@ -1,5 +1,5 @@
 const getElemByClass = (className) => {
-    return document.getElementsByClassName(className).item(0);
+    return document.getElementsByClassName(className);
 }
 
 const getElemById = (id) => {
@@ -7,7 +7,7 @@ const getElemById = (id) => {
 }
 
 const useProduct = (item) => {
-    let lastActiveItem = getElemByClass("products-list-item_active");
+    let lastActiveItem = getElemByClass("products-list-item_active").item(0);
     if(lastActiveItem){
         lastActiveItem.className = "products-list-item";
     }
@@ -19,8 +19,21 @@ const useProduct = (item) => {
         getElemById(itemData.attributes.item(i).name).value = itemData.attributes.item(i).nodeValue;
     }
 
-    let productHeader = getElemByClass("product-description__header");
+    let productHeader = getElemByClass("product-description__header").item(0);
     productHeader.innerHTML = "Редактирование: " + itemData.getAttribute("name");
 
+}
+
+const saveProduct = () => {
+    let newProductData = getElemByClass('product-description__input_field');
+    let oldProductData = getElemByClass('products-list-item_active').item(0).children.item(0);
+
+    for(let i = 0; i < newProductData.length; i++) {
+        oldProductData.setAttribute(newProductData[i].id, newProductData[i].value);
+    }
+
+    oldProductData.innerHTML = oldProductData.getAttribute("name");
+    getElemByClass("product-description__header").item(0).innerHTML =
+        "Редактирование: " + oldProductData.getAttribute("name");
 }
 
