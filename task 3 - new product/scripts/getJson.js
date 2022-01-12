@@ -1,13 +1,13 @@
 function readJsonFile(file, callback) {
-    let rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status === 200) {
-            callback(rawFile.responseText);
+    let getFile = new XMLHttpRequest();
+    getFile.overrideMimeType("application/json");
+    getFile.open("GET", file, true);
+    getFile.onreadystatechange = function() {
+        if (getFile.readyState === 4 && getFile.status === 200) {
+            callback(getFile.responseText);
         }
     }
-    rawFile.send(null);
+    getFile.send(null);
 }
 
 
