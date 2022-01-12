@@ -6,7 +6,7 @@ const getElemById = (id) => {
     return document.getElementById(id);
 }
 
-const useProduct = (item) => {
+const loadProduct = (item) => {
     let lastActiveItem = getElemByClass("products-list-item_active").item(0);
     if(lastActiveItem){
         lastActiveItem.className = "products-list-item";

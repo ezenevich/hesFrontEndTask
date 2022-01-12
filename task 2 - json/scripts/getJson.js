@@ -22,7 +22,7 @@ readJsonFile("./content/loanProducts.json", function(text){
         let productsListItemNDate = document.createElement('p');
 
         productsListItem.className = "products-list-item";
-        productsListItem.setAttribute("onclick", 'useProduct(this)');
+        productsListItem.setAttribute("onclick", 'loadProduct(this)');
 
         productsListItemName.className = "products-list-item__name";
         productsListItemNDate.className = "products-list-item__date";
